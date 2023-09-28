@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 450px;
+            width: 750px;
+            background-color: pink;
+            border: 2px solid red;
+
+        }
+
+        .item {
+            height: 7vh;
+            width: 6vw;
+            padding: 0;
+            background-color: whitesmoke;
+            border: 2px solid violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            font-weight: bolder;
+            font-size: larger;
+            /* animation-name: NeerajKaAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.09, 0.5, 0, 0.99);
+            animation-direction: alternate-reverse;
+            animation: NeerajKaAnimation 1s cubic-bezier(0.09, 0.5, 0, 0.99) 0.6 infinite alternate-reverse ; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation: NeerajKaAnimation 1s ease-in-out 3 forwards;
+            animation: Neeraj2 1s ease-in-out 3 forwards;
+
+        }
+
+        @keyframes NeerajKaAnimation {
+
+            from {
+                background-color: Red;
+            }
+
+            to {
+                background-color: cornflowerblue;
+                transform: translateX(1000px);
+
+            }
+
+
+        }
+
+
+        @keyframes Neeraj2 {
+
+
+            0% {
+                transform: rotate(100deg);
+            }
+
+
+            20% {
+                transform: rotate(120deg);
+            }
+
+
+            40% {
+                transform: rotate(140deg);
+            }
+
+
+
+
+            60% {
+                transform: rotate(160deg);
+            }
+
+
+
+            80% {
+                transform: rotate(180deg);
+            }
+
+
+
+            100% {
+                transform: rotate(240deg);
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item translate ">
+
+            Box
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

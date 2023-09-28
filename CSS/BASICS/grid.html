@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calculator</title>
+
+<style>
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 100px);
+    background-color: lightskyblue;
+    padding: 10px;
+    border: 5px solid salmon;
+    gap: 3px 4px; /* Set gap between grid items */
+  }
+
+  .edit {
+    grid-column: span 4; /* Make input span all columns */
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .grid-item {
+    font-size: 30px;
+    font-family: fira code;
+    display: block;
+    color: aliceblue;
+    padding: 20px;
+    border: 1px solid rgb(222, 97, 97);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <input type="text" class="edit" id="display" disabled>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+  <div class="grid-item">/</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">*</div>
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">-</div>
+  <div class="grid-item">0</div>
+  <div class="grid-item">.</div>
+  <div class="grid-item">=</div>
+  <div class="grid-item">+</div>
+</div>
+
+<script>
+  // JavaScript for calculator functionality would go here
+</script>
+</body>
+</html>
