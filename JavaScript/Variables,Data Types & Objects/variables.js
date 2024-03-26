@@ -8,7 +8,7 @@ function myFunction()
 
     if (true) {
 
-        var x = 10;
+        var x = 20;
       }
       console.log(x);
     }
@@ -35,6 +35,25 @@ function myFunction()
 myFunction2()
 
 
-function (params) {
-  
+/* 
+?const Scope:
+
+Variables declared with const are block-scoped and cannot be re-assigned once initialized. While the value of a const variable remains constant, properties of objects or elements of arrays assigned to const can still be modified. Like let, const variables are not hoisted and are only accessible after declaration. They provide a way to define values that should remain constant throughout the program.
+
+
+
+
+*/
+
+
+
+
+function myFunction3() {
+
+  if (true) {
+      const x = 123;
+     //. x = 1  TypeError : Assignment to constant variable
+    }
+   //! console.log(x); Uncaught ReferenceError: x is not defined
 }
+myFunction3()
