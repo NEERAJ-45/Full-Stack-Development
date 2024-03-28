@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = Number(prompt("Enter a number: "));
+        let num2 = Number(prompt("Enter another number: "));
+        console.log("Entered numbers:", num1, num2);
+
+        let rand = Math.floor(Math.random() * 100) + 1; // Generate random number between 1 and 100
+        console.log("Random number between 1 and 100:", rand);
+        if (rand < 10) {
+
+            result = Number(prompt("1. +\n2. -\n3. *\n4. \\ What Do u wanna perform? "))
+            switch (result) {
+                case 1:
+                    console.log("Faulty Addition:" +( num1 - num2));
+
+                    break;
+                case 2:
+                    console.log("Faulty Substraction:" + (num1 / num2));
+                    break;
+                case 3:
+                    console.log("Faulty Multiplication:" + (num1 + num2));
+                case 4:
+                    console.log("Faulty Multiplication:" + (num1 ** num2));
+
+                default:
+                    break;
+            }
+
+
+
+        } else {
+            result = Number(prompt("1. +\n2. -\n3. *\n4. \\ \nWhat Do u wanna perform? "))
+            switch (result) {
+                case 1:
+                    console.log(" Addition:" + (num1 + num2));
+
+                    break;
+                case 2:
+                    console.log(" Substraction:" + (num1 - num2));
+                    break;
+                case 3:
+                    console.log(" Multiplication:" + (num1 * num2));
+                case 4:
+                    console.log(" Division:" + (num1 / num2));
+
+                default:
+                    break;
+            }
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
