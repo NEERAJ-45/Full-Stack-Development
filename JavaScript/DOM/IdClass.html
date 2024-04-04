@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            background-color: chocolate;
+            padding: 2px;
+        }
+
+        .container {
+            background-color: cadetblue;
+            border: 2px dotted dodgerblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div id="CBox" class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur culpa perspiciatis quaerat nisi quasi
+            nam id ducimus neque modi in, asperiores, architecto magnam quis eius officiis sed molestiae! Aspernatur
+            voluptatibus fugiat assumenda odio ratione.</p>
+        <img src="https://scontent-bom2-2.xx.fbcdn.net/v/t1.6435-9/121340770_3582602955188466_5037498485421996628_n.jpg?stp=dst-jpg_s640x640&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=sH9P0UbcSbgAX_p7rfl&_nc_ht=scontent-bom2-2.xx&oh=00_AfCFaO1vu-6UpBb9mzQyFbhUXU6B-9hJR7R8r8JgiFPJPQ&oe=6633A513"
+            class="Rohit" alt="" srcset="">
+    </div>
+</body>
+<script>
+    document.getElementById("CBox").style.backgroundColor = "Blue";
+    document.getElementsByClassName("box")[4].style.backgroundColor = "Red";
+    document.getElementsByTagName("p")[0].style.border = "2px solid yellow";
+    document.getElementsByTagName("p")[0].style.backgroundColor = "yellow";
+    document.querySelector(".Rohit").style.height = "150px";
+    document.querySelectorAll(".box").forEach(e => { e.style.fontFamily = "Fira Code"; e.style.color = "AliceBlue" })
+    e = document.getElementsByTagName('div');
+    console.log(e[3].matches("#CBox"));
+    console.log(e[3].closest('html'));
+    console.log(document.querySelector('.container').contains(e[3]));
+    console.log(document.querySelector('.container').contains(document.querySelector('body')));
+    console.log(document.querySelector('body').contains(document.querySelector('.container')));
+
+
+</script>
+
+</html>
