@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            border: 2px solid brown;
+            height: 50px;
+            width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cont">
+        Hello
+        <div class="box">I am A Box</div>
+    </div>
+    <input type="text" class="ip">
+    <button type="button">Click me</button>
+</body>
+<script>
+    let count = 0;
+    let button = document.querySelector('button');
+
+    button.addEventListener('click', () => {
+        count++;
+        console.log("Button was clicked " + count + " times");
+    });
+
+    button.addEventListener('dblclick', () => {
+        count++;
+        console.log("Button was double clicked " + count + " times");
+    });
+
+    let cont = document.querySelector('.cont');
+
+    document.addEventListener('keypress', (e) => {
+        console.log("Key was pressed  " + "\n" + e.key);
+    });
+
+    cont.addEventListener("mouseenter", () => {
+        console.log("This was Hovered In");
+    })
+    cont.addEventListener("mouseleave", () => {
+        console.log("This was Hovered Out");
+    })
+
+
+
+
+
+    let ip = document.querySelector('.ip');
+
+    ip.addEventListener('focus', () => {
+        console.log("This was focused " + "\n");
+    });
+    ip.addEventListener('focusout', () => {
+        console.log("This was focused " + "\n");
+    });
+</script>
+
+</html>

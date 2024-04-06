@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(135, 153, 235);
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-family: fira code;
+            font-size: 20px;
+        }
+
+        .text-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .text {
+            animation: marquee 5s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .childContainer {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(235, 133, 218);
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-family: fira code;
+            font-size: 20px;
+        }
+
+        .child {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(0, 255, 128);
+            border: 2px solid black;
+            font-family: fira code;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">container
+        <div class="childContainer">
+            child-Container <div class="child">child</div>
+        </div>
+    </div>
+    <div class="text-container">
+        <span class="text">Im Extra text</span>
+    </div>
+</body>
+
+<script>
+
+    document.querySelector('.child').addEventListener('click', (e) => {
+        e.stopPropagation()
+        alert('child was Clicked')
+
+    })
+    document.querySelector('.childContainer').addEventListener('click', (e) => {
+        e.stopPropagation()
+
+        alert('child-container was Clicked')
+
+    })
+    document.querySelector('.container').addEventListener('click', (e) => {
+        e.stopPropagation()
+
+        alert('container was Clicked')
+
+    })
+    // document.querySelector('body').addEventListener('click', (e) => {
+    //     e.stopPropagation()
+
+    //     alert('body was Clicked')
+
+    // })
+
+
+    let text = document.querySelector('.text')
+
+    // setInterval(() => { text.style.backgroundColor = `$rgb(${Math.floor(Math.random) * 256},${Math.floor(Math.random) * 256)},${Math.floor(Math.random) * 256}); }, 3000)`
+
+    setInterval(() => {
+
+        text.style.backgroundColor = `rgb(${Math.floor(Math.random()) * 256},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
+        text.style.color = `rgb(${Math.floor(Math.random()) * 256},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
+    }, 1000
+    )
+
+</script>
+
+</html>

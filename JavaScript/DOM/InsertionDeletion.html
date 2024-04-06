@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .sy {
+            background-color: blueviolet !important;
+            color: aliceblue;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" style="display: block;">
+    <div class="container ty sy fy" data-writtenBy="Neeraj">
         <div class="box">Im a Box</div>
     </div>
 </body>
-<script>
 
+<script>
     a = document.querySelector(".container")
     console.log(a.innerHTML);
     ab = document.querySelector(".box")
@@ -24,10 +30,27 @@
     console.log(a.textContent);
     // a.hidden = true
     a.innerHTML = "Hello Im Neeraj"
-    console.log(a.hasAttribute("style"));
-    console.log(a.getAttribute("style"));
-    ab.setAttribute("style", "background-color: red;")
+    // console.log(a.hasAttribute("style"));
+    // console.log(a.getAttribute("style"));
+    // ab.setAttribute("style", "background-color: red;")
 
+    div = document.createElement('div')
+    div.innerHTML = "Hello Im <b>Coder</b>";
+    div.setAttribute("class", "createdBy");
+    // a.append(div)
+    // a.after(div);
+    a.before(div);
+    // a.prepend(div);
+    // a.replacewith(div)
+    // a.remove()
+
+    a.insertAdjacentHTML("beforebegin", '<i> I love Cricket So much</i>')
+
+    console.log(a.classList);
+    console.log(a.className);
+    console.log(a.classList.add("Neeraj"));
+    // console.log(a.classList.remove("fy"));
+    a.classList.toggle("sy")
 </script>
 
 </html>
