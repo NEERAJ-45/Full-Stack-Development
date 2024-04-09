@@ -1,0 +1,19 @@
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid black;
+    height: 550px;
+    width: 900px;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.container h1 {
+    background:linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
+    -webkit-background-clip: text;
+    /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+}

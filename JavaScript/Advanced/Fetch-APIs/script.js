@@ -27,3 +27,16 @@ async function Search() {
     console.error(error);
   }
 }
+
+
+/**
+ * @ The fetch() function is a built-in JavaScript method used to make asynchronous HTTP requests to fetch resources from a network.
+*  @ 1. It is commonly used to retrieve data from APIs or remote servers.
+*@   2. fetch() takes one mandatory argument, which is the URL of the resource to fetch.
+*@   3. It returns a Promise that resolves to the Response object representing the response to the request.
+*@   4. The Response object contains information such as the status of the request, headers, and body.
+*@   5. Once the Promise returned by fetch() is resolved, additional methods such as response.json() or response.text() can be used to extract data from the response body.
+*@   6. fetch() is asynchronous, meaning it does not block the execution of JavaScript code, allowing other operations to continue while waiting for the response.
+*@   7. It supports various options for customizing the request, such as setting request headers or specifying the HTTP method (GET, POST, etc.).
+ 
+ */
