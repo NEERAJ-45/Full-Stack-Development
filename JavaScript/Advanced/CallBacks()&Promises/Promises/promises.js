@@ -75,12 +75,18 @@ anyProm
   .catch((err) => {
     console.log("" + err);
   });
+
 /*
-  - Promise.allSettled(): A method that takes an array of promises and returns a single promise that resolves after all of the given promises have either resolved or rejected. The resulting promise resolves with an array of objects, each representing the outcome of the corresponding promise in the input array, whether it was fulfilled with a value or rejected with a reason. This method is useful when you want to wait for all promises to settle, regardless of whether they were fulfilled or rejected.
+   - Promise.allSettled(): A method that takes an array of promises and returns a single promise that resolves after all of the given promises have either resolved or rejected. The resulting promise resolves with an array of objects, each representing the outcome of the corresponding promise in the input array, whether it was fulfilled with a value or rejected with a reason. This method is useful when you want to wait for all promises to settle, regardless of whether they were fulfilled or rejected.
 
-  - Promise.race(): A method that takes an array of promises and returns a single promise that resolves or rejects as soon as one of the promises in the array settles, either by fulfilling with a value or rejecting with a reason. The resulting promise settles with the same outcome (fulfilled or rejected) and the same value or reason as the first promise to settle in the input array. This method is useful when you want to execute multiple asynchronous operations concurrently and respond as soon as the first one completes.
+  -  Promise.race(): A method that takes an array of promises and returns a single promise that resolves or rejects as soon as one of the promises in the array settles, either by fulfilling with a value or rejecting with a reason. The resulting promise settles with the same outcome (fulfilled or rejected) and the same value or reason as the first promise to settle in the input array. This method is useful when you want to execute multiple asynchronous operations concurrently and respond as soon as the first one completes.
 
-  - Promise.all(): A method that takes an array of promises and returns a single promise that resolves only when all of the promises in the array have resolved successfully. If any of the promises in the array is rejected, the resulting promise is also rejected, and its rejection reason will be the reason of the first rejected promise in the input array. This method is useful when you need to perform multiple asynchronous operations in parallel and wait for all of them to complete before proceeding.
+-   Promise.all():    A method that takes an array of promises and returns a single promise that resolves only when all of the  promises in the array have resolved successfully. If any of the promises in the array is rejected, the resulting promise is also rejected, and its rejection reason will be the reason of the first rejected promise in the input array. This method is useful when you need to perform multiple asynchronous operations in parallel and wait for all of them to complete before proceeding.
 
-  - Promise.any(): A method that takes an array of promises and returns a single promise that resolves as soon as any of the promises in the array fulfills. If all promises are rejected, it rejects with an AggregateError, a new subclass of Error that groups together individual errors from each promise. This method is useful when you want to respond as soon as any of the promises in the array fulfills, ignoring rejections until at least one promise succeeds.
-*/
+-  Promise.any(): A method that takes an array of promises and returns a single promise that resolves as soon as any of the promises in the array fulfills. If all promises are rejected, it rejects with an AggregateError, a new subclass of Error that groups together individual errors from each promise. This method is useful when you want to respond as soon as any of the promises in the array fulfills, ignoring rejections until at least one promise succeeds.
+
+
+
+
+
+   */
