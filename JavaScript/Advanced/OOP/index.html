@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
+<script>
+    /*    let object = {
+            a: 1, name: "neeraj"
+        }
+        console.log(object);
+        
+        let animal = {
+            eats: true
+        }
+        let rabbit = {
+            jumps: true
+        }
+        
+        
+        rabbit.__proto__ = animal
+        
+        console.log(rabbit);
+        */
+
+    class Animal {
+
+        constructor(name) {
+            this.name = name
+            console.log("I will be called when Object is created!!");
+
+        }
+
+        eat() {
+            console.log("I'm Eating");
+
+        }
+        Fly() {
+            console.log("Udta hi Firu...");
+
+        }
+
+    }
+
+    class Billa extends Animal {
+
+        constructor(name) {
+            super(name);
+            super.eat()
+            this.name = name
+            console.log("I will be called when Object is created!! & Im  Bangad Billa");
+
+
+        }
+
+    }
+
+    let a = new Animal("Billa")
+    let ab = new Billa("Bangad Billa")
+
+    console.log(a.name);
+    console.log(ab.name);
+    a.Fly()
+    a.eat()
+
+</script>
+
 </html>
