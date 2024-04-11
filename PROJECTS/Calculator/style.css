@@ -1,0 +1,74 @@
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    font-family: digital-7;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.calculator {
+    font-family: digital-7;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.display {
+    width: 100%;
+    padding: 20px;
+    font-family: digital-7;
+    font-size: 5rem;
+    color: aliceblue;
+    text-align: left;
+    border: none;
+    /* background: radial-gradient(circle at 10% 20%, rgb(87, 108, 117) 0%, rgb(37, 50, 55) 100.2%); */
+    background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);   
+
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 60%);
+
+}
+
+.op-btn {
+    background: radial-gradient(circle at -0.8% 4.3%, rgb(59, 176, 255) 0%, rgb(76, 222, 250) 83.6%);
+}
+
+.op-btn:hover {
+    background: radial-gradient(circle at -0.8% 4.3%, rgb(6, 143, 234) 0%, rgb(5, 183, 218) 83.6%);
+
+}
+
+.op-btn:active {
+    background: radial-gradient(939px at 0.7% 2.4%, hsl(246, 100%, 75%) 0%, hsl(0, 0%, 91%) 100.2%);
+
+}

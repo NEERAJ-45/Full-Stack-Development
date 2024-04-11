@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input class="display" readonly>
+        <div class="keys">
+
+            <button onclick="inputVal('+')" class="op-btn">+</button>
+            <button onclick="inputVal('7')">7</button>
+            <button onclick="inputVal('8')">8</button>
+            <button onclick="inputVal('9')">9</button>
+            <button onclick="inputVal('-')" class="op-btn"> -</button>
+            <button onclick="inputVal('4')">4</button>
+            <button onclick="inputVal('5')">5</button>
+            <button onclick="inputVal('6')">6</button>
+            <button onclick="inputVal('*')" class="op-btn">*</button>
+            <button onclick="inputVal('1')">1</button>
+            <button onclick="inputVal('2')">2</button>
+            <button onclick="inputVal('3')">3</button>
+            <button onclick="inputVal('/')" class="op-btn">/</button>
+            <button onclick="inputVal('0')">0</button>
+            <button onclick="inputVal('.')" ">.</button>
+            <button onclick="Calculate()"> =</button>
+            <button onclick="Clear()" class="op-btn"> C</button>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
