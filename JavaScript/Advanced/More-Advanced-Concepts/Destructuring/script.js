@@ -14,5 +14,16 @@ let obj = {
 };
 
 let { a, b } = obj;
-x
+x;
 console.log(a, b);
+
+// - Spread Operator
+
+let aaa = [1, 23, 89];
+
+sum = (a, b, c) => {
+  return a + b + c;
+};
+
+console.log(sum(aaa[0] + aaa[1] + aaa[2]));
+console.log(sum(...aaa));
