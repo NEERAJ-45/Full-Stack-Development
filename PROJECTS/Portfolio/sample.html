@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Glossy Navbar & Glassmorphism</title>
+    <style>
+        /* CSS styles for the glossy navbar with glassmorphism */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #b0e0e6);
+            padding-top: 150px; /* Adjusted padding */
+        }
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0; /* Changed to top: 0 */
+            left: 0; /* Changed to left: 0 */
+            width: 100%; /* Changed to width: 100% */
+            z-index: 1000;
+            height: 70px; /* Fixed height */
+        }
+
+        /* Navbar links */
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        /* Glossy effect */
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ff4500;
+        }
+
+        /* Front page content container */
+        .front-page {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Title and subtitle */
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #333;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #666;
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        /* First Section */
+        .firstSection {
+            display: flex;
+            justify-content: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        /* Left section styles */
+        .leftSection {
+            font-size: 2.7rem;
+        }
+
+        /* Right section styles */
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Photo with effects */
+        .intro-section img {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out, border 0.3s ease-in-out;
+            /* Add gradient border */
+            border: 4px solid transparent;
+            background-image: linear-gradient(#f0f0f0, #b0e0e6), linear-gradient(to right, #ff4500, #ff6347);
+            background-clip: padding-box, border-box;
+        }
+
+        /* Hover effect for photo */
+        .intro-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            filter: brightness(1.2) contrast(1.1) saturate(1.2);
+            border: 4px solid #ff4500;
+        }
+
+        /* Text paragraph for introduction */
+        .intro-section p {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        /* Blinking cursor text styles */
+        .blinking-text {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 0;
+            font-weight: bold;
+            color: #ff4500;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinking-text::after {
+            content: "|";
+            animation: blink 0.5s step-end infinite;
+        }
+
+        /* Cards container */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Card title */
+        .card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Card description */
+        .card p {
+            color: #666;
+        }
+
+        /* Styles for centering text */
+        .text-container {
+            /* text-align: center; */
+            margin-top: 150px;
+            /* font-weight: bolder; */
+            font-family: "Platypi", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Glossy Navbar with Glassmorphism -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="about" class="firstSection">
+        <div class="rightSection">
+            <img id="imageToggle" src="me.jpg" alt="Portrait of Neeraj" style="height: 500px;"> <!-- Adjusted height -->
+        </div>
+        <div class="leftSection">
+            <!-- Text container for centering text -->
+            <div class="text-container">
+                <div class="text">Hello, I'm <span class="purple">Neeraj</span></div>
+                <div>And I'm Passionate</div>
+                <span id="element"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Container for Skills -->
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Building responsive and user-friendly websites.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>Creating stunning visuals and graphics.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and engaging user interfaces.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <h3>Photography</h3>
+            <p>Capturing moments with creativity and precision.</p>
+        </div>
+    </div>
+
+    <script>
+        // List of color schemes
+        const colorSchemes = [
+            {
+                bodyBackground: 'linear-gradient(135deg, #f0f0f0, #b0e0e6)',
+                navbarBackground: 'rgba(255, 255, 255, 0.2)',
+                navbarLinksColor: '#000',
+                hoverColor: '#ff4500',
+                titleColor: '#333',
+                subtitleColor: '#666',
+                cardBackground: 'rgba(255, 255, 255, 0.7)',
+                cardTitleColor: '#333',
+                cardDescriptionColor: '#666',
+            },
+            // Additional color schemes can be added here
+        ];
+
+        // Function to apply color scheme to elements
+        function applyColorScheme(scheme) {
+            // Apply body background
+            document.body.style.background = scheme.bodyBackground;
+
+            // Apply navbar background and link colors
+            const navbar = document.querySelector('.navbar');
+            navbar.style.background = scheme.navbarBackground;
+            navbar.querySelectorAll('a').forEach(link => {
+                link.style.color = scheme.navbarLinksColor;
+                link.addEventListener('mouseenter', () => link.style.color = scheme.hoverColor);
+                link.addEventListener('mouseleave', () => link.style.color = scheme.navbarLinksColor);
+            });
+
+            // Apply title and subtitle colors
+            document.querySelector('h1').style.color = scheme.titleColor;
+            document.querySelector('h2').style.color = scheme.subtitleColor;
+
+            // Apply card background, title, and description colors
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.background = scheme.cardBackground;
+                card.querySelector('h3').style.color = scheme.cardTitleColor;
+                card.querySelector('p').style.color = scheme.cardDescriptionColor;
+            });
+        }
+
+        var typed = new Typed('#element', {
+            strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+            typeSpeed: 50,
+        });
+        // Apply the first color scheme by default
+        applyColorScheme(colorSchemes[0]);
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+
+</html>
