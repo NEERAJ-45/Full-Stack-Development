@@ -1,22 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body, html {
+body {
+    font-family: Robot   ;
+    background-color: #B9D9EB;
     margin: 0;
-    padding: 0;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#map {
-    height: 80%;
+.weatherForm {
+    margin: 20px;
 }
 
-#weather-info {
-    text-align: center;
-    padding: 20px;
-}
-
-#weather-card {
-    display: none;
-    margin-top: 20px;
-    border: 1px solid #ccc;
+.cityIp {
     padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 10px;
+    width: 300px;
+    border: 2px solid aliceblue;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: hsl(195, 100%, 50%);
+
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: hsl(195, 77%, 40%);
+
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.card {
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+    width: 35vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    min-width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(19, 19, 19, 0.849);
+}
+
+.card:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 10px 0px;
+
+}
+
+.cityDisplay,
+.tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 83%);
+    margin-bottom: 25px;
+
+}
+
+.humidityDisplay {
+    font-weight: bolder;
+    margin-bottom: 25px;
+
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.wEmoji {
+    margin: 0;
+    font-size: 6rem;
+
+}
+
+.errorDis {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.529);
+    font-weight: bold;
+
 }

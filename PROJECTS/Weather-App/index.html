@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Map Weather</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="map"></div>
-    <div id="weather-info">
-        <h2>Weather Information</h2>
-        <div id="weather-card"></div>
+    <form action="" class="weatherForm">
+        <input type="text" name=""class="cityIp" id="" placeholder="Enter City">
+        <button type="submit">Get Weather</button>
+
+    </form>
+    <div class="card" style="display: none">
+    <h1 class="cityDisplay">Miraj</h1>
+        <p class="tempDisplay">90°F</p>
+        <p class="humidityDisplay">Humidity:100%</p>
+        <p class="descDisplay">Rain</p>
+        <p class="wEmoji">🌧️</p>
+        <p class="errorDis">Plz Enter a city</p>
+    
+        
     </div>
-
-    <!-- Move the JavaScript code to a separate <script> tag -->
-    <script src="script.js"></script>
 </body>
-
+<script src="script.js"></script>
 </html>
