@@ -1,18 +1,19 @@
 {
-  "name": "mobinfo",
+  "name": "intro-to-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "print",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Neeraj",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.2.3",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
