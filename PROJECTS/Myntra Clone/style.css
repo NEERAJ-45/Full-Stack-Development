@@ -1,0 +1,65 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+/* Styling for small icons */
+.left img {
+    width: 32px;
+    height: 25px;
+    padding: 7px;
+}
+
+/* Styling for navigation */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+/* Header Styling */
+header {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    /* Optional: Add more styling as needed */
+}
+
+/* Section Styling */
+.section1 {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 10px;
+    height: 122vh;
+    display: flex;
+    justify-content: center;
+    /* Align-items can be added when needed */
+}
+
+/* Right-side Padding */
+.right {
+    padding-right: 80px;
+}
+
+/* Input Field Styling */
+input {
+    width: 34vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+.homeImg {
+    width: 100%;
+    max-height: 50vh;
+    height: auto;
+    display: block; /* Ensures the image behaves as a block element */
+    object-fit: contain; /* Maintains aspect ratio without stretching */
+}
+
+/* Additional Comments: Add more specific comments if necessary */
+
