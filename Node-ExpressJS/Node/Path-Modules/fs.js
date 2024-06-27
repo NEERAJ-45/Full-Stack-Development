@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require("Node-ExpressJS/Node/Path-Modules/fs.js");
 // console.log(fs);
 
 // console.log("starting");
