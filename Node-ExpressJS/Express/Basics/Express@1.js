@@ -15,6 +15,13 @@ app.get("/server", (req, res) => {
 app.get("/me/:first/:second", (req, res) => {
   res.send(`This is request to ${req.params.first} & ${req.params.second}`);
 });
+app.get("/", (req, res) => {
+  res.send(`Hello`);
+});
+
+
+
+
 
 app.use(express.static("myFolder"));
 
