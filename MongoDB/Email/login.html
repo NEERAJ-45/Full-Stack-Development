@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Retrieve Credentials</h2>
+    <form id="retrieveForm">
+        <label for="retrieveEmail">Email:</label><br>
+        <input type="email" id="retrieveEmail" name="retrieveEmail" required><br><br>
+        <input type="submit" value="Retrieve">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            const result = await response.text();
+            alert(result);
+        });
+
+        document.getElementById('retrieveForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('retrieveEmail').value;
+
+            const response = await fetch(`/retrieve/${email}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const result = await response.json();
+            alert(JSON.stringify(result));
+        });
+    </script>
+</body>
+</html>
