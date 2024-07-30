@@ -39,8 +39,8 @@ A music streaming application built with HTML, CSS, and JavaScript, providing a 
 
 ## Contact
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
+- **Email**: [neerajsurnis@gmail.com](mailto:neerajsurnis@gmail.com)
+- **LinkedIn**: [Neeraj Surnis](https://www.linkedin.com/in/neeraj-surnis-8739752b1)
+- **GitHub**: [Neeraj-45](https://github.com/Neeraj-45)
 - **LeetCode**: [Neeraj's LeetCode Profile](https://leetcode.com/u/NEERAJ-45/)
 - **CodeChef**: [Neeraj's CodeChef Profile](https://www.codechef.com/users/neeraj82)
