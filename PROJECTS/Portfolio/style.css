@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "montserrat";
+
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+#page>img {
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    transform: translateY(-52%);
+    width: 50%;
+}
+#idd{
+    border: 2px solid black;
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: violet;
+}
+
+#page>#nav {
+    height: 10%;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    z-index: 9;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+#center-nav {
+    display: flex;
+    gap: 20px;
+}
+
+#center-nav>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    /* font-family: "Edu AU VIC WA NT Hand", cursive; */
+    font-size: 18px;
+}
+
+#nav>input {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 0.5px solid #dadada;
+    text-transform: uppercase;
+}
+
+#text {
+    height: 75%;
+    padding: 30px 50px;
+    width: 35%;
+    /* background-color: burlywood; */
+    position: relative;
+    top: 18%;
+    left: 8%;
+    scale: 1.1;
+}
+
+#text>h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin: 20px;
+}
+
+#text>h4 {
+    margin-top: 30px;
+    color: #2b2b2b;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#text>h5 {
+    position: absolute;
+    color: #8873ef;
+    transform: rotate(-20deg);
+    left: -3;
+}
+
+.buttons {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 4%;
+    bottom: 12%;
+    /* background-color: green; */
+}
+
+.buttons>button {
+    padding: 10px 22px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+}
+
+.buttons>#b1 {
+    margin-left: 20px;
+    background-color: #8873ef;
+    color: #fff;
+}
+.buttons>#b2 {
+    margin-left: 20px;
+    background-color: #eeeaea;
+    color: #000;
+}
+
+.buttons>button>i 
+{
+   font-size: 17px; 
+}

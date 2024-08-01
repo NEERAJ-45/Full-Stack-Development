@@ -1,0 +1,154 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.mouseWheelZoom": true,
+  "code-runner.runInTerminal": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "Fira Code, JetBrains Mono,'consolas','Courier New', monospace",
+  "terminal.integrated.fontFamily": "monospace",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "terminal.integrated.fontSize": 20,
+  "editor.linkedEditing": true,
+  "chatgpt.lang": "en",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "window.titleBarStyle": "custom",
+  "git.ignoreMissingGitWarning": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.fontLigatures": true,
+  "editor.minimap.showSlider": "always",
+  "[css]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  },
+  
+
+
+
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3BB9FF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "-",
+      "color": " #FFFD0D ",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#b2c4bc",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "#",
+      "color": "pink",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "orange",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    }
+    
+  ],
+  "liveServer.settings.donotVerifyTags": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.enableSmartCommit": true,
+  "editor.defaultFormatter": "formulahendry.code-runner",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  
+  "git.confirmSync": false,
+  "chatgpt.model": "gpt-4-32k-0613",
+  "workbench.productIconTheme": "bongocat",
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "workbench.colorTheme": "Monospace Dark",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.startupEditor": "none",
+  "css.lint.unknownAtRules": "ignore",
+  "redhat.telemetry.enabled": true,
+  "cmake.options.statusBarVisibility": "visible",
+  "cmake.showOptionsMovedNotification": false,
+  "terminal.integrated.copyOnSelection": true,
+  "liveServer.settings.fullReload": true,
+  "background.windowBackgrounds": [
+    "c:/Users/HP/Downloads/pxfuel \\(2\\).jpg"
+  ],
+
+
+  "background.backgroundOpacity": [
+    0.96,
+    1,
+    0.9,
+    0.9
+  ],
+  "background.autoInstall": false,
+  "background.editorBackgrounds": [
+    "c:/Users/HP/Downloads/pxfuel \\(1\\).jpg"
+  ],
+  "background.backgroundAlignment": [
+    "Center Center",
+    "Top Center",
+    "Center Center",
+    "Center Center"
+  ],
+  "background.backgroundSize": [
+    "Auto",
+    "Cover",
+    "Cover",
+    "Cover"
+],
+"tailwindcss-intellisense.trace.server": "messages",
+"tailwindCSS.emmetCompletions": true,
+"tailwindCSS.experimental.classRegex": [
+
+]
+
+}
