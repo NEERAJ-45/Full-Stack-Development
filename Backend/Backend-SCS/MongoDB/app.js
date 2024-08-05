@@ -24,7 +24,7 @@ app.get("/readAll", async (req, res) => {
 app.get("/update", async (req, res) => {
   let updatedUser = await userModel.findOneAndUpdate(
     { username: "neerajAlwaysOP" },
-    { name: "sonalIsCute", username: "sonalAlwaysCute" },
+    { name: "SheIsCute", username: "ShesAlwaysCute" },
     { new: true }
   );
   res.send(updatedUser);
