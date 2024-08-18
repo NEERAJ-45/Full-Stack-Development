@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Additional custom styles for glassmorphism */
+        .glassmorphism {
+            backdrop-filter: blur(10px); /* Adjust blur strength here */
+            background-color: rgba(255, 255, 255, 0.1); /* Adjust background opacity here */
+        }
+
+        /* Pure CSS focus styles */
+        .inputF:focus {
+            border-color: #3b82f6; /* Tailwind's blue-500 */
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Tailwind's blue-500 with some transparency */
+            background-color: rgba(255, 255, 255, 0.1); /* Bluish-white background for focus */
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-900 text-white flex items-center justify-center min-h-screen p-10">
+    <div class="w-full max-w-md glassmorphism p-8 rounded-lg shadow-lg">
+        <h3 class="text-3xl mb-5 text-center">Create User</h3>
+        <form action="/register" method="post" class="space-y-4">
+            <input type="text"
+                class="w-full px-5 py-2 bg-transparent inputF rounded-md border-2 border-zinc-800"
+                placeholder="Name" name="name">
+            <input type="text"
+                class="w-full px-5 py-2 bg-transparent inputF rounded-md border-2 border-zinc-800"
+                placeholder="Username" name="username">
+            <input type="number"
+                class="w-full px-5 py-2 bg-transparent inputF rounded-md border-2 border-zinc-800"
+                placeholder="Age" name="age">
+            <input type="email"
+                class="w-full px-5 py-2 bg-transparent inputF rounded-md border-2 border-zinc-800"
+                placeholder="Email" name="email">
+            <input type="password"
+                class="w-full px-5 py-2 bg-transparent inputF rounded-md border-2 border-zinc-800"
+                placeholder="Password" name="password">
+            <input type="submit" 
+                class="w-full px-5 py-2 bg-blue-500 rounded-md text-white hover:bg-blue-600 active:bg-blue-700 transition duration-150"
+                value="Create Account">
+        </form>
+    </div>
+</body>
+
+</html>
