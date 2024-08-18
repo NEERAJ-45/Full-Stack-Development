@@ -1,0 +1,27 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'GilRoy';
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #page1 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-top:18vh ;
+        padding: 0 1.5vw;
+    }
+
+    #page1 h1 {
+        line-height: 15vw;
+        text-transform: uppercase;
+        font-size: 14.4vw;
+        font-family: futura;
+    }
