@@ -35,7 +35,7 @@ Android app enabling offline location sharing, QR code generation, and nearby ho
 Upcoming messaging app offering real-time text/voice messaging, multimedia sharing, and secure group chats.
 
 ### File Upload and Management System
-Secure file upload system using **Node.js**, **Express.js**, and **Multer**. Features unique file naming with `crypto`, dynamic path management with `path.join`, and user authentication via `bcrypt` and `JWT`.
+Secure file upload system using **Node.js**, **Express.js**, and **Multer**. Features unique file naming with `crypto`, dynamic path management with `path Module`, and user authentication via `bcrypt` and `JWT`.
 
 ## Contact
 
