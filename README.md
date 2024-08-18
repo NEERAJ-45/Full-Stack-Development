@@ -2,40 +2,40 @@
 
 ## Overview
 
-As a Full Stack Developer, I specialize in both front-end and back-end development, offering a comprehensive approach to building dynamic and responsive web applications. My expertise spans across various technologies and tools that enable me to create seamless user experiences and robust server-side functionalities.
+Experienced Full Stack Developer with a strong command of both front-end and back-end technologies. Skilled in creating dynamic, responsive web applications that offer seamless user experiences and robust server-side functionality.
 
 ## Skills
 
 ### Front-End Technologies
-- **HTML5**: Markup language for creating structured web content.
-- **CSS3**: Styling language for designing visually appealing web pages.
-- **JavaScript**: Programming language for creating interactive web elements.
-- **React.js**: Library for building user interfaces with reusable components.
+- **HTML5**: Structured web content creation.
+- **CSS3**: Styling for visually appealing web pages.
+- **JavaScript**: Interactive web elements.
+- **React.js**: Reusable UI components.
 
 ### Back-End Technologies
-- **Node.js**: JavaScript runtime for building scalable server-side applications.
-- **Express.js**: Web application framework for Node.js, simplifying API development.
-- **Python**: Programming language for server-side scripting and automation.
+- **Node.js**: Scalable server-side applications.
+- **Express.js**: Simplified API development.
+- **Python**: Server-side scripting and automation.
 
 ### Databases
-- **MongoDB**: NoSQL database for handling unstructured data and scalability.
-- **MySQL**: Relational database management system for structured data.
+- **MongoDB**: Scalable NoSQL database.
+- **MySQL**: Relational database management system.
 
 ### DevOps & Tools
-- **Git**: Version control system for managing code changes.
-- **Docker**: Containerization platform for consistent development and deployment.
-- **Postman**: Tool for API development and testing.
+- **Git**: Version control for code management.
+- **Docker**: Containerization for consistent deployment.
+- **Postman**: API development and testing.
 
 ## Projects
 
-### Project 1: [Smart Emergency Toolkit](#)
-Developed an Android app that allows users to share their location offline, generate and scan QR codes, and view nearby hospitals on a map.
+### Smart Emergency Toolkit
+Android app enabling offline location sharing, QR code generation, and nearby hospital mapping.
 
-### Project 2: [Chat Connect](#)
-An upcoming messaging app designed to offer real-time text and voice messaging, multimedia sharing, and secure group chats.
+### Chat Connect
+Upcoming messaging app offering real-time text/voice messaging, multimedia sharing, and secure group chats.
 
-### Project 3: [Saved Music Streaming](#)
-A music streaming application built with HTML, CSS, and JavaScript, providing a clean interface for playing and navigating saved music.
+### File Upload and Management System
+Secure file upload system using **Node.js**, **Express.js**, and **Multer**. Features unique file naming with `crypto`, dynamic path management with `path Module`, and user authentication via `bcrypt` and `JWT`.
 
 ## Contact
 
