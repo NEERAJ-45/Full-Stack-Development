@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GilRoy';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+
+}
+
+button{
+    margin:  12px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rebeccapurple;
+    color: white;    
+    border-radius: 10px;
+    /* border: none; */
+}

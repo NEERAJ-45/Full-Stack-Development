@@ -1,0 +1,17 @@
+{
+  "name": "threejs-hdri-scene",
+  "version": "1.0.0",
+  "description": "A basic Three.js scene with HDRI lighting and OrbitControls",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.136.0"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0"
+  }
+}
