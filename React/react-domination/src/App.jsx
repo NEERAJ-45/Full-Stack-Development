@@ -1,61 +1,39 @@
-import React from "react";
-import Card from "./components/Card";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
 const App = () => {
-  const users = [
-    {
-      name: "Neeraj Surnis",
-      city: "Miraj",
-      age: 21,
-      profession: "Full Stack Developer",
-      profilePhoto:
-        "https://i.pinimg.com/736x/28/4f/55/284f559d636e9e1156898727fc25bf25.jpg",
-    },
-    {
-      name: "Shahrukh Khan",
-      city: "Mumbai",
-      age: 24,
-      profession: "Data Scientist",
-      profilePhoto:
-        "https://i.pinimg.com/736x/c1/55/d7/c155d768539aad53a7d955362bec01fa.jpg",
-    },
-    {
-      name: "Rahul Deshmukh",
-      city: "Pune",
-      age: 26,
-      profession: "Software Engineer",
-      profilePhoto:
-        "https://i.pinimg.com/736x/b2/1c/48/b21c4877ddde36a0a75c57a3c4d41934.jpg",
-    },
-    {
-      name: "Anjali Sharma",
-      city: "Bengaluru",
-      age: 23,
-      profession: "UX Designer",
-      profilePhoto:
-        "https://i.pinimg.com/originals/56/52/ca/5652cae6142f67d87d68d2d4f9697ef0.jpg",
-    },
-    {
-      name: "Vikram Patil",
-      city: "Delhi",
-      age: 29,
-      profession: "Project Manager",
-      profilePhoto:
-        "https://i.pinimg.com/enabled_hi/564x/ec/9b/61/ec9b6156569813a1c554bc3aeb6e909c.jpg",
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  const getData = async () => {
+    const response = await axios.get("https://picsum.photos/v2/list");
+    setData(response.data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
-      <div className="p-10">
-        {users.map((element, index) => {
+      <button
+        className="bg-pink-600 m-10 font-semibold text-2xl text-white  rounded-md px-4 py-2 active:scale-90 hover:bg-pink-500"
+        onClick={getData}
+      >
+        Get Data
+      </button>
+
+      <div className="p-5 bg-zinc-950 text-xl">
+        {data.map((value, index) => {
           return (
-            <Card
-              key={element.index}
-              user={element.name}
-              age={element.age}
-              city={element.city}
-              profession={element.profession}
-              profilePhoto={element.profilePhoto}
-            />
+            <div
+              key={index}
+              className="bg-gray-50 text-black flex items-center justify-between px-7 w-full py-6 rounded-md mb-7"
+            >
+              <img className="h-40" src={value.download_url} alt="" />
+              <h1 className="font-extrabold left-5   text-green-600 mr-96 uppercase">
+                {value.author}
+              </h1>
+            </div>
           );
         })}
       </div>
