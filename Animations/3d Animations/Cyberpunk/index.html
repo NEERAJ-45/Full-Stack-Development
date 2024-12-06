@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Overlay Fix</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000; /* Black background for a sleek design */
+    }
+
+    canvas {
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      pointer-events: none;
+      opacity: 0.8;
+      mix-blend-mode: lighten;
+    }
+
+    nav {
+      z-index: 50;
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-9xl">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <img class="w-32 h-auto mix-blend-screen" src=" /gwsphxkkwyl31.png" alt="logo">
+      <div class="flex space-x-6 text-white/60">
+        <a href="#" class="hover:text-yellow-400 transition-colors">Home</a>
+        <a href="#" class="hover:text-yellow-400 transition-colors">About</a>
+        <a href="#" class="hover:text-yellow-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main w-full relative">
+    <canvas id="canvas"></canvas>
+
+    <!-- Overlay Image -->
+    <img src="/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png" 
+         alt="Overlay Effect" 
+         class="overlay w-[800px] h-auto">
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="w-full bg-black backdrop-blur-md py-20">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Quick Links -->
+        <div class="space-y-4">
+          <h3 class="text-white/80 text-xl font-bold mb-6">Quick Links</h3>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Features</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Documentation</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Resources</a>
+          </div>
+        </div>
+        <!-- Community -->
+        <div class="space-y-4">
+          <h3 class="text-white/80 text-xl font-bold mb-6">Community</h3>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Discord Server</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">GitHub</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Twitter</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="space-y-4">
+          <h3 class="text-white/80 text-xl font-bold mb-6">Contact</h3>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Support</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Business Inquiries</a>
+            <a href="#" class="text-white/40 hover:text-yellow-400 transition-colors">Feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

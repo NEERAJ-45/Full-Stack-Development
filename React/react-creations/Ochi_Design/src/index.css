@@ -2,14 +2,243 @@
 @tailwind components;
 @tailwind utilities;
 
-
- 
 @font-face {
     font-family: myFont3;
-    src: url('./FoundersGroteskXCond-Bold.otf');
+    src: url('../public/FoundersGroteskXCond-Bold.otf');
+}
+
+@font-face {
+    font-family: NeueMontreal;
+    src: url('../public/NeueMontreal-Regular.ttf');
+}
+
+@font-face {
+    font-family: myFont4;
+    src: url('../public/FoundersGroteskCond-Lt.otf');
 }
 
 #ts {
     font-family: myFont3;
+}
+
+#tt {
+    font-family: NeueMontreal;
+}
+
+#tn {
+    font-family: myFont4;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+}
+
+nav {
+    height: 100vh;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+.parent a {
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.parent a:after {
+    content: "";
+    position: absolute;
+    background-color: #CDEA68;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+.parent a:hover {
+    color: #ffffff;
+}
+
+.parent a:hover:after {
+    width: 100%;
+}
+
+#specialButton {
+    position: relative;
+    overflow: hidden;
+    border-color: #333;
+    transition: color 0.35s, background-color 0.35s;
+    color: #fff;
+}
+
+#specialButton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transition: width 0.35s ease;
+}
+
+.button-text,
+.arrow-icon {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+}
+
+#specialButton {
+    position: relative;
+    overflow: hidden;
+    border-color: #333;
+    color: #fff;
+    transition: color 0.35s;
+}
+
+
+#specialButton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    transition: width 0.35s ease;
+}
+
+
+.button-text,
+.arrow-icon {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    transition: color 0.35s;
+}
+
+
+#specialButton:hover {
+    color: rgb(9 9 11);
+}
+
+#specialButton:hover::after {
+    width: 100%;
+}
+
+
+#specialButton:hover .arrow-icon {
+    color: #1a2e05;
+    transform: scale(1.2);
+    transition: color 0.35s, transform 0.35s;
+}
+
+.dets a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.dets a:hover {
+    animation: wavy-animation 0.5s ease-in-out infinite;
+}
+
+
+.social-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    animation: wavy-animation 0.5s ease-in-out infinite;
+}
+
+@keyframes wavy-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#rating:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 50px #ffffff, 0 0 100px #ffffff;
+}
+
+#copyright:hover {
+    color: #004D43;
+    background: #CDEA68;
+    border: 1px solid #CDEA68;
+    text-shadow: 0 0 5px #CDEA68, 0 0 10px #CDEA68, 0 0 20px #CDEA68;
+    box-shadow: 0 0 5px #CDEA68, 0 0 20px #CDEA68, 0 0 50px #CDEA68, 0 0 100px #CDEA68;
+}
+
+.cardcontainer {
+    perspective: 1000px;
+
+}
+
+.card1,
+.card2,
+.card3 {
+    transition: transform 0.3s ease;
+
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+
+}
+
+
+
+
+.card1:hover {
+    box-shadow: 0 0 20px rgb(32, 81, 81);
+}
+
+.card2:hover {
+    box-shadow: 0 0 20px rgb(66, 81, 81);
+
+}
+
+.card3:hover {
+    box-shadow: 0 0 20px rgb(68, 85, 85);
 
 }

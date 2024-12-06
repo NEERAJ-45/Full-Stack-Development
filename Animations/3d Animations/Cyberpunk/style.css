@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: #121212;
+  padding: 10px 20px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+.nav ul li a:hover {
+  color: #ff00ff;
+}
+
+/* Main Canvas Container */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Overlay Image with Glow */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  width: 800px;
+  height: auto;
+}
+
+.glowing {
+  filter: brightness(1.5) drop-shadow(0 0 20px #ff00ff) drop-shadow(0 0 40px #ff00ff);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Pulse Animation for Glow */
+@keyframes pulse {
+  0%, 100% {
+    filter: brightness(1.5) drop-shadow(0 0 20px #ff00ff) drop-shadow(0 0 40px #ff00ff);
+  }
+  50% {
+    filter: brightness(2) drop-shadow(0 0 30px #ff00ff) drop-shadow(0 0 60px #ff00ff);
+  }
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  background-color: #121212;
+  padding: 20px 0;
+  margin-top: auto;
+}
