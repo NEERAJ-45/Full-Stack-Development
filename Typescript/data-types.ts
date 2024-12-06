@@ -75,4 +75,20 @@ Hello();
 let nullvar: null | number  =12 ;
  console.log(nullvar);
  console.log(typeof nullvar);
- nullvar = 'Neeraj'; // it will give error because nullvar is number type or Null type.
+ //nullvar = 'Neeraj'; // it will give error because nullvar is number type or Null type.
+
+ let undefinedvar: undefined;
+ console.log(typeof undefinedvar); 
+    
+ //* Never: This type represents values that never occur. It is used for functions that throw exceptions or for infinite loops. It indicates that the function will not complete normally.
+
+ function  hello():never{
+
+    while(true){
+        console.log('Hello');
+    }
+ }
+
+ hello();
+ console.log('Hello World');
+ 
