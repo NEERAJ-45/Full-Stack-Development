@@ -30,7 +30,28 @@ var UserData;
     UserData["name"] = "Neeraj";
     UserData[UserData["age"] = 21] = "age";
 })(UserData || (UserData = {}));
+console.log(UserData.name);
 let ab;
 ab = 12;
-ab = false; // it will give error because ab is number type
-console.log(UserData.name);
+// ab = false; // it will give error because ab is number type
+// * Any: This type allows a variable to hold any value, effectively opting out of type checking. It can be useful when you don't know the type in advance, but it should be used sparingly to maintain type safety.
+let ac;
+ac = 12;
+ac = false; // it will not give error because ac is any type
+//* Unknown: This type is similar to any, but it is safer. It indicates that a variable can hold any value, but you must perform some type checking before performing operations on it. This helps maintain type safety.
+let ns;
+ns = 32;
+ns = 'Neeraj Surnis';
+if (typeof ns === 'string') {
+    console.log(ns.toUpperCase());
+}
+//* Void: This type is used to indicate that a function does not return a value. It is commonly used as the return type for functions that perform an action but do not produce a result.
+function Hello() {
+    console.log('Hello World');
+}
+Hello();
+// * Null and Undefined: These types are used to represent the primitive values null and undefined. They are often used as the default values of variables that may not have been initialized.
+let nullvar = 12;
+console.log(nullvar);
+console.log(typeof nullvar);
+nullvar = 'Neeraj'; // it will give error because nullvar is number type or Null type.

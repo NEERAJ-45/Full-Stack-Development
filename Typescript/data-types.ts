@@ -65,3 +65,14 @@ if (typeof ns === 'string') {
 //* Void: This type is used to indicate that a function does not return a value. It is commonly used as the return type for functions that perform an action but do not produce a result.
 
 
+function Hello() :void {
+    console.log('Hello World');
+}  
+Hello();
+
+// * Null and Undefined: These types are used to represent the primitive values null and undefined. They are often used as the default values of variables that may not have been initialized.
+
+let nullvar: null | number  =12 ;
+ console.log(nullvar);
+ console.log(typeof nullvar);
+ nullvar = 'Neeraj'; // it will give error because nullvar is number type or Null type.
